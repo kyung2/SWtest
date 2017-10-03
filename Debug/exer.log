@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\hyunkyung\documents\visual studio 2017\projects\exer\exer\main.cpp(5): warning C4101: 'test' :참조되지 않은 지역 변수입니다.
+  exer.vcxproj -> C:\Users\hyunkyung\documents\visual studio 2017\Projects\exer\Debug\exer.exe
+  exer.vcxproj -> C:\Users\hyunkyung\documents\visual studio 2017\Projects\exer\Debug\exer.pdb (Partial PDB)
