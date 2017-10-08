@@ -1,7 +1,39 @@
 #include <cstdio>
 #include <cstring>
-#pragma warning (disable : 4996)
 
+#pragma warning (disable : 4996)
+#define MAX 101
+using namespace std;
+
+int main() {
+	char input[MAX], input2[MAX], input3[10], input4[MAX];
+
+
+	puts("test1 그냥 scanf 공백포함");
+	scanf("%s", input);
+	puts(input);
+	getchar();
+
+	puts("test2 공백포함");
+	scanf("%[^\n]", input2);
+	input2[strlen(input2) - 1] = '\0';
+	puts(input2);
+	getchar();
+
+	puts("test3 fgets 함수 공백포함");
+	fgets(input3, sizeof(input3), stdin);
+	printf("%s",input3);
+
+	//getchar();
+	puts("test3 fgets 함수 공백포함");
+	gets_s(input4);
+	puts(input4);
+
+
+
+
+}
+/*
 //11723 집합문제 
 int main() {
 	char input[30];
@@ -50,6 +82,7 @@ int main() {
 		}
 	}
 }
+*/
 
 /*1008 float double
 int main() {
