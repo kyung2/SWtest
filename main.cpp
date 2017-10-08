@@ -28,10 +28,12 @@ int main() {
 		else if (!strcmp(input, "check")) {
 			scanf("%d", &num);
 			if (num < 1 && num > 20) return 0;
-			else num--;
-			int tmp = s & ((1 << num));
-			if (tmp)  puts("1");
-			else puts("0");
+			else {
+				num--;
+				int tmp = s & ((1 << num));
+				if (tmp) puts("1");
+				else puts("0");
+			}
 		}
 		else if (!strcmp(input, "toggle")) {
 			scanf("%d", &num);
